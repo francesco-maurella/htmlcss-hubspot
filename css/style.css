@@ -98,7 +98,7 @@ main {
   text-align: center;
 }
 
-.articles>.content> * {
+.articles>.content * {
   margin-bottom: 15px;
 }
 
@@ -106,12 +106,19 @@ main {
   width: 100%;
   background: #FFF;
   padding: 25px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
 }
 
-.box.f-left {
-  width: 33%;
-  background: #FFF;
-  padding: 25px;
+.boxes-container {
+  width: 100%;
+}
+
+.boxes-container>.f-left {
+  width: calc(100% / 3);
+}
+
+.boxes-container>.f-left:nth-of-type(even) {
+  padding: 0 15px;
 }
 
 /* / articoli */
