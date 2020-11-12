@@ -27,9 +27,8 @@ body {
 .f-right {
   float: right;
 }
-
-
 /* / Utility CSS */
+
 
 /* INTESTAZIONE */
 header {
@@ -80,26 +79,29 @@ header {
 }
 /* / INTESTAZIONE */
 
+
 /* CORPO PRINCIPALE */
 
 main {
   width: 100%;
 }
 
-/* articoli */
-.articles {
-  width: 100%;
-  height: 2900px;
-  background: #F2F9FD;
+main>section {
   padding: 25px 0;
 }
 
-.articles>.content {
+main>section>.content {
   text-align: center;
 }
 
-.articles>.content * {
-  margin-bottom: 15px;
+main>section>.content> * {
+  margin-bottom: 20px;
+}
+
+/* articoli */
+.articles {
+  width: 100%;
+  background: #F2F9FD;
 }
 
 .box {
@@ -128,6 +130,27 @@ main {
   width: 100%;
   height: 700px;
   background: #00ABA2;
+  color: #FFF;
+}
+
+.stats-container {
+  width: 100%;
+}
+
+.stats-container>.f-left {
+  width: calc(100% / 4);
+}
+
+.grid {
+  border: 1px solid #FFF;
+}
+
+.stats-container>.f-left:nth-of-type(4n+1)>.grid {
+  border-left: 1px transparent;
+}
+
+.stats-container>.f-left:nth-of-type(4n+4)>.grid {
+  border-right: 1px transparent;
 }
 /* / statistiche */
 
