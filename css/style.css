@@ -10,7 +10,7 @@ body {
 
 /* Utility CSS */
 .content {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -35,7 +35,6 @@ header {
   width: 100%;
   height: 100%;
   padding-top: 82px;
-    position: relative;
 }
 
 .fixbar {
@@ -66,7 +65,7 @@ header {
   background-image: url('../img/jumbotron.png');
   background-repeat: no-repeat;
   background-position: right top;
-
+  position: relative;
 }
 
 .jumbotron:before  {
@@ -92,12 +91,9 @@ main>section {
   padding: 25px 0;
 }
 
-main>section>.content {
-  text-align: center;
-}
-
 main>section>.content> * {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* articoli */
@@ -161,12 +157,34 @@ main>section>.content> * {
 
 /* / statistiche */
 
-/* sponsor */
-.sponsor {
-  width: 100%;
-  height: 700px;
+/* customers */
+.customers {
   background: #FFF;
 }
-/* / sponsor */
+
+.partners>.f-left{
+  width: 13em;
+}
+
+.partners>.f-left>h2{
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.partners>.f-right {
+  width: 600px;
+  height: 150px;
+}
+
+.partners>.f-right>.clear>.f-left {
+  width: calc(100% / 4)
+}
+
+.try> * {
+  width: 50%
+}
+
+
+/* / customers */
 
 /* / CORPO PRINCIPALE */
