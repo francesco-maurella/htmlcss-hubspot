@@ -35,11 +35,12 @@ header {
   width: 100%;
   height: 100%;
   padding-top: 82px;
-  position: relative;
+    position: relative;
 }
 
 .fixbar {
   width: 100%;
+  min-width: 1200px;
   height: 80px;
   background: #E5F1FB;
   border-bottom: 2px solid #12273A;
@@ -59,16 +60,17 @@ header {
 }
 
 .jumbotron {
-  height: 600px;
+  height: 695px;
   padding-top: 200px;
   background-color: #FFF3ED;
   background-image: url('../img/jumbotron.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right bottom;
+  background-position: right top;
+
 }
 
-.divisor {
+.jumbotron:before  {
+  content: '';
   width: 100%;
   height: 80px;
   background: #A7E9E0;
@@ -128,7 +130,6 @@ main>section>.content> * {
 /* statistiche */
 .stats {
   width: 100%;
-  height: 700px;
   background: #00ABA2;
   color: #FFF;
 }
@@ -145,13 +146,19 @@ main>section>.content> * {
   border: 1px solid #FFF;
 }
 
-.stats-container>.f-left:nth-of-type(4n+1)>.grid {
-  border-left: 1px transparent;
+.stats-container>.f-left:nth-of-type(1n+1)>.grid {
+  border-top: 0;
+  border-left: 0;
 }
 
 .stats-container>.f-left:nth-of-type(4n+4)>.grid {
-  border-right: 1px transparent;
+  border-right: 0;
 }
+
+.stats-container>.f-left:nth-of-type(1n+5)>.grid {
+  border-bottom: 0;
+}
+
 /* / statistiche */
 
 /* sponsor */
