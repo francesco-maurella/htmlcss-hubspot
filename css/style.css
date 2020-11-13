@@ -9,9 +9,18 @@ body {
 }
 
 /* Utility CSS */
+.al-center {
+  text-align: center;
+}
+
 .content {
   width: 80%;
+  padding: 30px 0;
   margin: auto;
+}
+
+.content> *:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .clear:after {
@@ -27,6 +36,10 @@ body {
 .f-right {
   float: right;
 }
+
+.container {
+  width: calc(100% / 4);
+}
 /* / Utility CSS */
 
 
@@ -35,6 +48,14 @@ header {
   width: 100%;
   height: 100%;
   padding-top: 82px;
+}
+
+header>nav>.content {
+  padding: 0;
+}
+
+header>nav>.content> * {
+  margin-bottom: 0 !important;
 }
 
 .fixbar {
@@ -82,18 +103,8 @@ header {
 
 
 /* CORPO PRINCIPALE */
-
 main {
   width: 100%;
-}
-
-main>section {
-  padding: 25px 0;
-}
-
-main>section>.content> * {
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 /* articoli */
@@ -120,7 +131,6 @@ main>section>.content> * {
 .boxes-container>.f-left:nth-of-type(even) {
   padding: 0 15px;
 }
-
 /* / articoli */
 
 /* statistiche */
@@ -130,31 +140,22 @@ main>section>.content> * {
   color: #FFF;
 }
 
-.stats-container {
-  width: 100%;
-}
-
-.stats-container>.f-left {
-  width: calc(100% / 4);
-}
-
 .grid {
   border: 1px solid #FFF;
 }
 
-.stats-container>.f-left:nth-of-type(1n+1)>.grid {
+.stats .container:nth-of-type(1n+1)>.grid {
   border-top: 0;
   border-left: 0;
 }
 
-.stats-container>.f-left:nth-of-type(4n+4)>.grid {
+.stats .container:nth-of-type(4n+4)>.grid {
   border-right: 0;
 }
 
-.stats-container>.f-left:nth-of-type(1n+5)>.grid {
+.stats .container:nth-of-type(1n+5)>.grid {
   border-bottom: 0;
 }
-
 /* / statistiche */
 
 /* customers */
@@ -176,15 +177,34 @@ main>section>.content> * {
   height: 150px;
 }
 
-.partners>.f-right>.clear>.f-left {
-  width: calc(100% / 4)
-}
-
 .try> * {
-  width: 50%
+  width: 50%;
 }
 
-
+.try>.f-right {
+  text-align: right;
+}
 /* / customers */
-
 /* / CORPO PRINCIPALE */
+
+/* BASE */
+footer {
+  background: #32495B;
+  color: #FFF;
+}
+
+.bottom-menu>.container> * {
+  line-height: 40px;
+  text-align: center;
+  list-style: none;
+}
+
+.lang {
+  padding: 20px;
+}
+
+.lang>ul>li {
+  display: inline-block;
+  margin: 0 25px;
+}
+/* / BASE */
