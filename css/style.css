@@ -43,6 +43,8 @@ list-style: none;
 
 .content {
   width: 80%;
+  min-width: 1200px;
+  max-width: 1700px;
   padding: 30px 0;
   margin: auto;
 }
@@ -84,7 +86,6 @@ header>nav>.content> * {
 
 .fixbar {
   width: 100%;
-  min-width: 1200px;
   background: #E5F1FB;
   border-bottom: 2px solid #12273A;
   position: fixed;
@@ -213,8 +214,6 @@ header>nav>.content> * {
   margin-right: 10px;
 }
 
-
-
 .boxes>.f-left:first-child {
   width: 100% !important;
   margin: 25px 0;
@@ -249,9 +248,18 @@ header>nav>.content> * {
 }
 
 .grid {
+  padding:25px 40px;
   border: 1px solid #FFF;
   border-top: 0;
   border-left: 0;
+}
+
+.grid> *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.grid>h4 {
+  font-size: 35px;
 }
 
 .div4:nth-of-type(4n+4)>.grid {
