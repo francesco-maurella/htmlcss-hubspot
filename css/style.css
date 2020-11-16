@@ -146,7 +146,8 @@ header>nav>.content> * {
   content: '';
   width: 100%;
   height: 80px;
-  background: #A7E9E0;
+  background: rgb(0,164,141);
+  background: linear-gradient(264deg, rgba(0,164,141,1) 0%, rgba(54,204,184,1) 60%, rgba(142,227,217,1) 100%);
   border: solid #12273A;
   border-width: 3px 0;
   position: absolute;
@@ -243,7 +244,8 @@ header>nav>.content> * {
 
 /* statistiche */
 .stats {
-  background: #00ABA2;
+  background: rgb(0,157,180);
+  background: linear-gradient(74deg, rgba(0,157,180,1) 0%, rgba(0,173,181,1) 44%, rgba(0,190,165,1) 100%);
   color: #FFF;
 }
 
@@ -276,26 +278,44 @@ header>nav>.content> * {
   background: #FFF;
 }
 
-.partners>.f-left{
-  width: 13em;
+.partners> * {
+  margin: 0 100px
 }
 
-.partners>.f-left>h2{
-  font-size: 35px;
-  margin-bottom: 25px;
+.partners>.f-left {
+  width: 200px;
 }
 
 .partners>.f-right {
   width: 600px;
-  height: 150px;
+}
+
+.partners h2{
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.partners>.f-right>img {
+  width: calc(100% / 4 - 24px);
+  vertical-align: middle;
+  margin: 10px;
 }
 
 .try> * {
-  width: 50%;
+  width: 35%;
 }
 
-.try>.f-right {
-  text-align: right;
+.try>.f-left {
+  padding: 90px 0;
+}
+
+.try h2{
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.try>.f-right>img {
+  width: 80%
 }
 /* / customers */
 /* / CORPO PRINCIPALE */
