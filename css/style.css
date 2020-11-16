@@ -6,11 +6,31 @@
 
 body {
   font-family: 'Roboto';
+  color: #33475B;
+}
+
+a {
+  color: #32495B;
+  text-decoration: none;
 }
 
 /* Utility CSS */
 .al-center {
   text-align: center;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.clear:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .content {
@@ -23,30 +43,26 @@ body {
   margin-bottom: 30px;
 }
 
-.clear:after {
-  content: '';
-  display: table;
-  clear: both;
+.button-cont {
+  margin: 3.5em 0;
 }
 
-.f-left {
-  float: left;
+.button {
+  background: #FF7155;
+  border: 1px solid #FF7155;
+  border-radius: 5px;
+  color: #FFF !important;
+  text-decoration: none;
+  padding: 1.5em 2em;
 }
 
-.f-right {
-  float: right;
-}
-
-.container {
+.div4 {
   width: calc(100% / 4);
 }
 /* / Utility CSS */
 
-
 /* INTESTAZIONE */
 header {
-  width: 100%;
-  height: 100%;
   padding-top: 82px;
 }
 
@@ -61,7 +77,6 @@ header>nav>.content> * {
 .fixbar {
   width: 100%;
   min-width: 1200px;
-  height: 80px;
   background: #E5F1FB;
   border-bottom: 2px solid #12273A;
   position: fixed;
@@ -69,19 +84,40 @@ header>nav>.content> * {
   z-index: 1;
 }
 
-.menu {
-  width: 100%;
-  background: #FFF;
-  vertical-align: middle;
+.fixbar, .navbar {
+  line-height: 80px;
 }
 
-.menu, .fixbar {
-  line-height: 80px;
+.fixbar li, .navbar li {
+  display: inline;
+  padding: 0 12px;
+}
+
+.fixbar .f-left>ul>li:last-child {
+  border-left: 1px solid #899397;
+}
+
+.f-right>a{
+  padding: 12px;
+  margin-left: 10px;
+  color: #01A6BE;
+}
+
+#login {
+  background: #FFF;
+  color: #FF7155 !important;
+}
+
+.navbar {
+  background: #FFF;
+}
+
+.navbar>.content>.f-left>img {
+  vertical-align: middle;
 }
 
 .jumbotron {
   height: 695px;
-  padding-top: 200px;
   background-color: #FFF3ED;
   background-image: url('../img/jumbotron.png');
   background-repeat: no-repeat;
@@ -89,71 +125,105 @@ header>nav>.content> * {
   position: relative;
 }
 
-.jumbotron:before  {
+.jumbotron>.content> * {
+  width: 40%;
+}
+
+.jumbotron>.content>h2 {
+  margin-top: 1em;
+  font-size: 45px;
+}
+
+.jumbotron:after  {
   content: '';
   width: 100%;
   height: 80px;
   background: #A7E9E0;
-  border-top: 3px solid #12273A;
-  border-bottom: 3px solid #12273A;
+  border: solid #12273A;
+  border-width: 3px 0;
   position: absolute;
   bottom: 0;
 }
 /* / INTESTAZIONE */
 
-
 /* CORPO PRINCIPALE */
-main {
-  width: 100%;
-}
-
 /* articoli */
 .articles {
-  width: 100%;
   background: #F2F9FD;
 }
 
 .box {
-  width: 100%;
   background: #FFF;
   padding: 25px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
 }
 
-.boxes-container {
-  width: 100%;
+.fix>.f-left {
+  margin: 40px;
 }
 
-.boxes-container>.f-left {
+.fix>.f-left:first-child {
+  width: 15%;
+}
+
+.fix>.f-left:first-child>div>img {
+  width: 100%
+}
+
+.fix>.f-left:last-child {
+  width: 60%;
+  text-align: left;
+}
+
+.fix>.f-left:last-child> * {
+  margin-bottom: 25px;
+}
+
+.fix>.f-left:last-child hr {
+  vertical-align: middle;
+  margin-left: 55px;
+  width: 50%;
+}
+
+.in-block {
+  display: inline-block;
+}
+
+.in-block> * {
+  margin-right: 10px;
+}
+
+.boxes>.f-left:first-child {
+  width: 100% !important;
+  margin: 25px 0;
+}
+
+.boxes>.f-left {
   width: calc(100% / 3);
 }
 
-.boxes-container>.f-left:nth-of-type(even) {
-  padding: 0 15px;
+.boxes>.f-left:nth-child(3) {
+  padding: 0 25px;
 }
 /* / articoli */
 
 /* statistiche */
 .stats {
-  width: 100%;
   background: #00ABA2;
   color: #FFF;
 }
 
 .grid {
   border: 1px solid #FFF;
-}
-
-.stats .container:nth-of-type(1n+1)>.grid {
   border-top: 0;
   border-left: 0;
 }
 
-.stats .container:nth-of-type(4n+4)>.grid {
+.div4:nth-of-type(4n+4)>.grid {
   border-right: 0;
 }
 
-.stats .container:nth-of-type(1n+5)>.grid {
+.div4:nth-of-type(1n+5)>.grid {
   border-bottom: 0;
 }
 /* / statistiche */
@@ -193,7 +263,7 @@ footer {
   color: #FFF;
 }
 
-.bottom-menu>.container> * {
+.bottom-menu>.div4> * {
   line-height: 40px;
   text-align: center;
   list-style: none;

@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML/CSS - LAYOUT [Hubspot]</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -15,15 +16,24 @@
         <div class="content clear">
           <!-- left side -->
           <div class="f-left">
-            English
-            Contact Us
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href="#">English</a>
+                <a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
           </div>
           <!-- / left side -->
 
           <!-- right side -->
           <div class="f-right">
-            Login
-            GetHubSpotFree
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="#" class="button" id="login">Login</a>
+            <a href="#" class="button">GetHubSpotFree</a>
           </div>
           <!-- / right side -->
         </div>
@@ -31,7 +41,7 @@
       <!-- / Fixbar -->
 
       <!-- Navbar -->
-      <nav class="menu">
+      <nav class="navbar">
         <div class="content clear">
           <!-- left Side -->
           <div class="f-left">
@@ -41,21 +51,29 @@
 
           <!-- right Side -->
           <div class="f-right">
-            Software
-            Pricing
-            Resources
-            Partners
-            About
+            <ul>
+              <li><a href="#">Software</a></li>
+              <li><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+            </ul>
           </div>
           <!-- / right Side -->
-        </div
+        </div>
       </nav>
       <!-- / Navbar -->
 
       <!-- Jumbotron -->
       <section class="jumbotron">
         <div class="content">
-          There's a better way to grow.
+          <h2>There's a better way to grow.</h2>
+          <p>Marketing, sales, and service software that helps your business grow without compromise. Because "good for the business" should also mean "good for the customer".</p>
+          <div class="button-cont"><a class="button" href="#">GetHubSpotFree</a></div>
         </div>
       </section>
       <!-- / Jumbotron -->
@@ -79,27 +97,102 @@
           <!-- /Head Articoli -->
 
           <!-- Galleria Articoli -->
-          <div class="box">
-            ...
-          </div>
 
-          <div class="boxes-container clear">
-
+          <div class="boxes clear">
             <div class="f-left">
-              <div class="box">
-                ...
+              <div class="box fix clear">
+                <div class="f-left">
+                  <div><img src="img/cubo.png" alt="Cube"></div>
+                  <div class="button-cont"><a class="button" href="#">Learn more</a></div>
+                </div>
+                <div class="f-left">
+                  <h3>Free HubSpot CRM</h3>
+                  <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
+                    <h4 class="in-block">POPOLAR FEATURE</h4>
+                    <hr class="in-block">
+                  <ul>
+                    <li class="in-block">
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      <a href="#">Contact Insight</a>
+                    </li>
+                    <li class="in-block">
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      <a href="#">Contact Insight</a>
+                    </li>
+                    <li class="in-block">
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      <a href="#">Contact Insight</a>
+                    </li>
+                  </ul>
+
+                </div>
               </div>
             </div>
 
             <div class="f-left">
               <div class="box">
-                ...
+                <h4>...</h4>
+                <div><img src="img/cubo.png" alt="Cube"></div>
+                <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
+                <hr>
+                <ul>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                </ul>
               </div>
             </div>
-
             <div class="f-left">
               <div class="box">
-                ...
+                <h4>...</h4>
+                <div><img src="img/cubo.png" alt="Cube"></div>
+                <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
+                <hr>
+                <ul>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="f-left">
+              <div class="box">
+                <h4>...</h4>
+                <div><img src="img/cubo.png" alt="Cube"></div>
+                <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
+                <hr>
+                <ul>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <a href="#">Contact Insight</a>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -112,55 +205,53 @@
       <!-- Statistiche -->
       <section class="stats">
         <div class="content al-center">
-          <div>
             <h2>Learn and grow with award-winning support and a thriving community behind you.</h2>
             <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with HubSpot's legendary customer support team and a community of thousands of marketing and sales pros just like you.</p>
-          </div>
 
           <div class="clear">
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
             </div>
 
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
             </div>
 
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
             </div>
 
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
             </div>
 
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
             </div>
 
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
             </div>
 
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
             </div>
 
-            <div class="container f-left">
+            <div class="div4 f-left">
               <div class="grid">
                 ...
               </div>
@@ -186,28 +277,28 @@
             <!-- logos -->
             <div class="f-right">
               <div class="clear ">
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
-                <div class="container f-left">
+                <div class="div4 f-left">
                   ...
                 </div>
               </div>
@@ -240,7 +331,7 @@
       <div class="content">
         <!-- Menu inferiore -->
         <nav class="bottom-menu clear">
-          <div class="container f-left">
+          <div class="div4 f-left">
             <h3>Titolo</h3>
             <ul>
               <li>Voce</li>
@@ -250,7 +341,7 @@
               <li>Voce</li>
             </ul>
           </div>
-          <div class="container f-left">
+          <div class="div4 f-left">
             <h3>Titolo</h3>
             <ul>
               <li>Voce</li>
@@ -260,7 +351,7 @@
               <li>Voce</li>
             </ul>
           </div>
-          <div class="container f-left">
+          <div class="div4 f-left">
             <h3>Titolo</h3>
             <ul>
               <li>Voce</li>
@@ -270,7 +361,7 @@
               <li>Voce</li>
             </ul>
           </div>
-          <div class="container f-left">
+          <div class="div4 f-left">
             <h3>Titolo</h3>
             <ul>
               <li>Voce</li>
@@ -298,13 +389,18 @@
 
         <!-- Credits -->
         <section class="credits clear">
+          <!-- logo-destro -->
           <div class="f-left">
             Logo<br>
             Copyright © 2020 HubSpot, Inc.
           </div>
+          <!-- / logo-destra -->
+
+          <!-- links-sinistra -->
           <div class="f-right">
             Legal Stuff Privacy Policy
           </div>
+          <!-- / links-sinistra -->
         </section>
         <!-- / Credits -->
       </div>
