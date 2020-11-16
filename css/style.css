@@ -14,9 +14,17 @@ a {
   text-decoration: none;
 }
 
+li {
+list-style: none;
+}
+
 /* Utility CSS */
 .al-center {
   text-align: center;
+}
+
+.inline {
+  display: inline;
 }
 
 .f-left {
@@ -89,7 +97,6 @@ header>nav>.content> * {
 }
 
 .fixbar li, .navbar li {
-  display: inline;
   padding: 0 12px;
 }
 
@@ -154,44 +161,59 @@ header>nav>.content> * {
 
 .box {
   background: #FFF;
-  padding: 25px;
+  padding: 20px 55px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
 }
 
-.fix>.f-left {
-  margin: 40px;
+.box i {
+  color: #FF7155;
 }
 
-.fix>.f-left:first-child {
-  width: 15%;
+.top-article {
+    padding: 55px;
+  }
+
+.top-article>.f-left:first-child {
+  width: 14%;
 }
 
-.fix>.f-left:first-child>div>img {
+.top-article>.f-left {
+  margin: 0 50px;
+}
+
+.top-article>.f-left:first-child>div>img {
   width: 100%
 }
 
-.fix>.f-left:last-child {
-  width: 60%;
+.top-article>.f-left:last-child {
+  width: 65%;
   text-align: left;
 }
 
-.fix>.f-left:last-child> * {
+.top-article>.f-left:last-child> *:not(:last-child) {
   margin-bottom: 25px;
 }
 
-.fix>.f-left:last-child hr {
-  vertical-align: middle;
-  margin-left: 55px;
-  width: 50%;
+.top-article h4 {
+  line-height: 20px;
+  font-size: 20px;
+  width: 100%;
 }
 
-.in-block {
-  display: inline-block;
+.top-article h4:after {
+  content: '';
+  float: right;
+  width: 65%;
+  height: 2px;
+  margin-top: 9px;
+  background-color: #899397;
 }
 
-.in-block> * {
+.top-article li> * {
   margin-right: 10px;
 }
+
+
 
 .boxes>.f-left:first-child {
   width: 100% !important;
@@ -199,11 +221,24 @@ header>nav>.content> * {
 }
 
 .boxes>.f-left {
-  width: calc(100% / 3);
+  width: calc(100% / 3 - 20px);
 }
 
 .boxes>.f-left:nth-child(3) {
-  padding: 0 25px;
+  margin: 0 30px;
+}
+
+.column> *:not(:last-child) {
+  margin-bottom: 25px !important;
+}
+
+.column>.al-center:first-child {
+  width: 50%;
+  margin: auto;
+}
+
+.column>.al-center:first-child>img {
+  width: 100%;
 }
 /* / articoli */
 
@@ -266,7 +301,6 @@ footer {
 .bottom-menu>.div4> * {
   line-height: 40px;
   text-align: center;
-  list-style: none;
 }
 
 .lang {
