@@ -121,7 +121,7 @@ header {
 header>nav>.content {
   padding: 0;
 }
-
+/* navbars */
 .fixbar {
   width: 100%;
   background: #E5F1FB;
@@ -161,9 +161,11 @@ header>nav>.content {
 .navbar>.content>.f-left img {
   vertical-align: middle;
 }
-
+/* / navbars */
+/* jumbotron */
 .jumbotron {
   height: 695px;
+  padding-top: 50px;
   background-color: #FFF3ED;
   background-image: url('../img/jumbotron.png');
   background-repeat: no-repeat;
@@ -186,6 +188,7 @@ header>nav>.content {
   position: absolute;
   bottom: 0;
 }
+/* / jumbotron */
 /* / INTESTAZIONE */
 
 /* CORPO PRINCIPALE */
@@ -261,7 +264,6 @@ header>nav>.content {
   font-size: 14px;
 }
 /* / articoli */
-
 /* statistiche */
 .stats {
   background: rgb(0,157,180);
@@ -288,8 +290,16 @@ header>nav>.content {
   height: 100%;
 }
 
-.grid>h4 {
-  font-size: 35px;
+.data-numb {
+  font-size: 38px;
+  display: inline-block;
+}
+
+.data-numb:after {
+  content: '+';
+  float:right;
+  font-size: 24px;
+  padding: 7px;
 }
 
 .div4:nth-of-type(4n+4)>.grid {
@@ -299,9 +309,7 @@ header>nav>.content {
 .div4:nth-of-type(1n+5)>.grid {
   border-bottom: 0;
 }
-
 /* / statistiche */
-
 /* customers */
 .customers {
   background: #FFF;
@@ -396,7 +404,6 @@ footer a:hover{
 }
 
 .credits li {
-  display: inline-block;
   margin: 0 10px;
 }
 /* / BASE */
