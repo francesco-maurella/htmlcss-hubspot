@@ -10,13 +10,13 @@ body {
 }
 
 a {
-  color: #32495B;
   text-decoration: none;
+  color: #32495B;
 }
 
 a:hover {
-  color: #004F8C;
   text-decoration: underline;
+  color: #004F8C;
 }
 
 li {
@@ -26,6 +26,10 @@ list-style: none;
 /* Utility CSS */
 .al-center {
   text-align: center;
+}
+
+.al-left {
+  text-align: left;
 }
 
 .inline {
@@ -48,16 +52,32 @@ list-style: none;
 
 .content {
   width: 80%;
-  padding: 30px 0;
+  padding: 25px 0;
   margin: auto;
 }
 
-.content> *:not(:last-child) {
-  margin-bottom: 30px;
+.row-div> * {
+  padding: 15px 0;
+}
+
+.imp-title {
+  font-size: 45px;
+}
+
+.sect-title {
+  font-size: 30px;
+}
+
+.box-title {
+  font-size: 24px;
+}
+
+.box-subtitle {
+  font-size: 18px;
 }
 
 .button-cont {
-  margin: 3.5em 0;
+  margin: 30px 0;
 }
 
 .button {
@@ -74,8 +94,22 @@ list-style: none;
   text-decoration: none;
 }
 
+.hr:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 25px;
+  background-color: #899397;
+}
+
 .div4 {
   width: calc(100% / 4);
+}
+
+header, main, footer {
+  min-width: 1500px;
+  max-width: 1900px;
 }
 /* / Utility CSS */
 
@@ -86,10 +120,6 @@ header {
 
 header>nav>.content {
   padding: 0;
-}
-
-header>nav>.content> * {
-  margin-bottom: 0 !important;
 }
 
 .fixbar {
@@ -128,7 +158,7 @@ header>nav>.content> * {
   background: #FFF;
 }
 
-.navbar>.content>.f-left>img {
+.navbar>.content>.f-left img {
   vertical-align: middle;
 }
 
@@ -143,11 +173,6 @@ header>nav>.content> * {
 
 .jumbotron>.content> * {
   width: 40%;
-}
-
-.jumbotron>.content>h2 {
-  margin-top: 1em;
-  font-size: 45px;
 }
 
 .jumbotron:after  {
@@ -169,6 +194,11 @@ header>nav>.content> * {
   background: #F2F9FD;
 }
 
+.head-article {
+  width: 70%;
+  margin: auto;
+}
+
 .box {
   background: #FFF;
   padding: 20px 55px;
@@ -180,10 +210,6 @@ header>nav>.content> * {
 .box i {
   color: #FF7155;
 }
-
-.top-article {
-  padding: 55px;
-  }
 
 .top-article>.f-left:first-child {
   width: 14%;
@@ -199,26 +225,16 @@ header>nav>.content> * {
 
 .top-article>.f-left:last-child {
   width: 65%;
-  text-align: left;
 }
 
-.top-article>.f-left:last-child> *:not(:last-child) {
-  margin-bottom: 25px;
+.top-article .box-subtitle {
+  line-height: 18px;
 }
 
-.top-article h4 {
-  line-height: 20px;
-  font-size: 20px;
-  width: 100%;
-}
-
-.top-article h4:after {
-  content: '';
-  float: right;
+.top-article .hr:after {
   width: 65%;
-  height: 2px;
-  margin-top: 9px;
-  background-color: #899397;
+  margin-top: 8px;
+  float: right;
 }
 
 .top-article li> * {
@@ -227,7 +243,6 @@ header>nav>.content> * {
 
 .boxes>.f-left:first-child {
   width: 100% !important;
-  margin: 25px 0;
 }
 
 .boxes>.f-left {
@@ -238,20 +253,11 @@ header>nav>.content> * {
   margin: 0 30px;
 }
 
-.column> *:not(:last-child) {
-  margin-bottom: 25px !important;
+.list-article>img:first-child {
+  height: 120px;
 }
 
-.column>.al-center:first-child {
-  height: 140px;
-  margin: auto;
-}
-
-.column>.al-center:first-child>img {
-  height: 100%;
-}
-
-.column .button {
+.list-article .button {
   font-size: 14px;
 }
 /* / articoli */
@@ -313,15 +319,10 @@ header>nav>.content> * {
   width: 600px;
 }
 
-.partners h3{
-  font-size: 45px;
-  margin-bottom: 25px;
-}
-
 .partners>.f-right>img {
   width: calc(100% / 4 - 24px);
   vertical-align: middle;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .try> * {
@@ -330,11 +331,6 @@ header>nav>.content> * {
 
 .try>.f-left {
   padding: 90px 0;
-}
-
-.try h2{
-  font-size: 30px;
-  margin-bottom: 25px;
 }
 
 .try>.f-right>img {
