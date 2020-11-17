@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 30px;
   color: #33475B;
 }
 
@@ -32,7 +34,7 @@ list-style: none;
   text-align: left;
 }
 
-.inline {
+.inline>* {
   display: inline;
 }
 
@@ -57,27 +59,35 @@ list-style: none;
 }
 
 .row-div> * {
-  padding: 15px 0;
+  padding: 16px 0;
+}
+
+.m-top10 {
+  margin-top: 10px !important;
 }
 
 .imp-title {
   font-size: 45px;
+  line-height: 50px;
 }
 
 .sect-title {
   font-size: 30px;
+  line-height: 35px;
 }
 
 .box-title {
-  font-size: 24px;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .box-subtitle {
   font-size: 18px;
+  line-height: 23px;
 }
 
-.button-cont {
-  margin: 30px 0;
+.font-small {
+  font-size: 12px;
 }
 
 .button {
@@ -86,7 +96,7 @@ list-style: none;
   border-radius: 5px;
   color: #FFF !important;
   text-decoration: none;
-  padding: 1.5em 2em;
+  padding: 1.35em 2em;
 }
 
 .button:hover {
@@ -133,6 +143,7 @@ header>nav>.content {
 
 .fixbar, .navbar {
   line-height: 80px;
+  font-weight: 400;
 }
 
 .fixbar li, .navbar li {
@@ -174,7 +185,7 @@ header>nav>.content {
 }
 
 .jumbotron>.content> * {
-  width: 40%;
+  width: 45%;
 }
 
 .jumbotron:after  {
@@ -214,12 +225,12 @@ header>nav>.content {
   color: #FF7155;
 }
 
-.top-article>.f-left:first-child {
-  width: 14%;
+.top-article>.f-left {
+  margin: 20px 5%;
 }
 
-.top-article>.f-left {
-  margin: 0 50px;
+.top-article>.f-left:first-child {
+  width: 15%;
 }
 
 .top-article>.f-left:first-child>div>img {
@@ -279,7 +290,7 @@ header>nav>.content {
 }
 
 .grid> *:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .grid>div:first-child {
@@ -292,14 +303,15 @@ header>nav>.content {
 
 .data-numb {
   font-size: 38px;
+
   display: inline-block;
 }
 
 .data-numb:after {
   content: '+';
   float:right;
+  padding: 0 7px;
   font-size: 24px;
-  padding: 7px;
 }
 
 .div4:nth-of-type(4n+4)>.grid {
@@ -338,7 +350,7 @@ header>nav>.content {
 }
 
 .try>.f-left {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .try>.f-right>img {
@@ -366,10 +378,6 @@ footer a:hover{
 }
 
 #contact {
-  margin-top: 20px;
-}
-
-#contact>.button {
   background-color: #CBD6E2;
   border-color: transparent;
   color: #32495B !important;
@@ -386,6 +394,8 @@ footer a:hover{
 
 .lang {
   padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
 }
 
 .lang>ul>li {
