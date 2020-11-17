@@ -58,8 +58,12 @@ list-style: none;
   margin: auto;
 }
 
-.row-div> * {
+.vert-padd> * {
   padding: 16px 0;
+}
+
+.horiz-padd> * {
+  padding: 0 12px;
 }
 
 .m-top10 {
@@ -146,15 +150,11 @@ header>nav>.content {
   font-weight: 400;
 }
 
-.fixbar li, .navbar li {
-  padding: 0 12px;
-}
-
 .fixbar .f-left>ul>li:last-child {
   border-left: 1px solid #899397;
 }
 
-.f-right>a{
+.fixbar .f-right>a{
   padding: 12px;
   margin-left: 10px;
   color: #01A6BE;
@@ -284,9 +284,14 @@ header>nav>.content {
 
 .grid {
   padding:25px 40px;
-  border: 1px solid #FFF;
-  border-top: 0;
-  border-left: 0;
+}
+
+.grid.horiz-b {
+  border-bottom: 1px solid #FFF;
+}
+
+.grid.vert-b {
+  border-right: 1px solid #FFF;
 }
 
 .grid> *:not(:last-child) {
@@ -303,7 +308,6 @@ header>nav>.content {
 
 .data-numb {
   font-size: 38px;
-
   display: inline-block;
 }
 
@@ -313,14 +317,6 @@ header>nav>.content {
   padding: 0 7px;
   font-size: 24px;
 }
-
-.div4:nth-of-type(4n+4)>.grid {
-  border-right: 0;
-}
-
-.div4:nth-of-type(1n+5)>.grid {
-  border-bottom: 0;
-}
 /* / statistiche */
 /* customers */
 .customers {
@@ -328,21 +324,22 @@ header>nav>.content {
 }
 
 .partners> * {
-  margin: 0 100px
+  margin: 0 100px;
 }
 
 .partners>.f-left {
   width: 200px;
 }
 
-.partners>.f-right {
-  width: 600px;
+.logos {
+  width: 580px;
+  margin-top: 25px;
 }
 
-.partners>.f-right>img {
-  width: calc(100% / 4 - 24px);
+.logos img {
+  width: calc(100% / 4 - 23px);
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .try> * {
@@ -411,9 +408,5 @@ footer a:hover{
 .credits>.f-left img {
   height: 100%;
   opacity: 60%;
-}
-
-.credits li {
-  margin: 0 10px;
 }
 /* / BASE */
