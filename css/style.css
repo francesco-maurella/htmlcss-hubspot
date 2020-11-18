@@ -111,7 +111,6 @@ list-style: none;
 .hr:after{
   content: '';
   display: block;
-  width: 100%;
   height: 2px;
   margin-top: 25px;
   background-color: #899397;
@@ -127,34 +126,18 @@ header, main, footer {
 }
 /* / Utility CSS */
 
-/* INTESTAZIONE */
-header {
-  padding-top: 81px;
-}
-
-header>nav>.content {
-  padding: 0;
-}
-/* navbars */
-.fixbar {
+/* NAVBARS */
+.topbar {
   width: 100%;
   background: #E5F1FB;
   border-bottom: 1px solid #12273A;
-  position: fixed;
-  top: 0;
-  z-index: 1;
 }
 
-.fixbar, .navbar {
-  line-height: 80px;
-  font-weight: 400;
-}
-
-.fixbar .f-left>ul>li:last-child {
+.topbar .f-left>ul>li:last-child {
   border-left: 1px solid #899397;
 }
 
-.fixbar .f-right>a{
+.topbar .f-right>a{
   padding: 12px;
   margin-left: 10px;
   color: #01A6BE;
@@ -165,15 +148,20 @@ header>nav>.content {
   color: #FF7155 !important;
 }
 
-.navbar {
+.fixbar {
+  width: 100%;
   background: #FFF;
+  position: sticky;
+  top: 0;
+  z-index: 2
 }
 
-.navbar>.content>.f-left img {
+.fixbar>.content>.f-left img {
   vertical-align: middle;
 }
-/* / navbars */
-/* jumbotron */
+/* / NAVBARS */
+
+/* INTESTAZIONE */
 .jumbotron {
   height: 695px;
   padding-top: 50px;
@@ -199,7 +187,6 @@ header>nav>.content {
   position: absolute;
   bottom: 0;
 }
-/* / jumbotron */
 /* / INTESTAZIONE */
 
 /* CORPO PRINCIPALE */
